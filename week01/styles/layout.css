@@ -1,0 +1,63 @@
+html, body {
+    height:100%;
+    margin: 0;
+    padding:0;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    background-color: #343434;
+    font-family: "Times New Roman", Times, serif;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background-color: #2F3061;
+    color: aliceblue;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background-color: #0e34a0;
+    color: aliceblue;
+    justify-items: center;
+}
+
+nav ul{
+    display: flex;;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+article {
+    grid-row:2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #28afb0;
+}
+
+section {
+    grid-row:2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #83bfbf;
+}
+
+footer {
+    grid-row:-1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #ddcecd;
+}
+
+footer p {
+    display: flex;
+    justify-content: space-evenly;
+}

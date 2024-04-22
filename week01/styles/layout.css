@@ -4,11 +4,10 @@ html, body {
     padding:0;
 }
 
-
 body {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr  4fr auto;
     background-color: #343434;
     font-family: "Times New Roman", Times, serif;
 }
@@ -22,12 +21,23 @@ header {
     padding-right: 2rem;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 10fr;
+    grid-row:2 / 4;
+    grid-column: 1/-1;
+}
 nav {
+    grid-row: 1;
     grid-column-start: 1;
     grid-column-end: -1;
     background-color: #0e34a0;
     color: aliceblue;
     justify-items: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 nav ul{
@@ -36,15 +46,14 @@ nav ul{
     list-style-type: none;
 }
 
+
 article {
-    grid-row:2;
     grid-column-start: 1;
     grid-column-end: 2;
     background-color: #28afb0;
 }
 
 section {
-    grid-row:2;
     grid-column-start: 2;
     grid-column-end: 3;
     background-color: #83bfbf;

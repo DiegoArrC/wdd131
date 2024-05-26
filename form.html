@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="prodReview">
+            <fieldset>
+                <label>Product Name*
+                    <select id="products" name="productName" required>
+                        <option value="" disabled selected>Select a product ... &#9662</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Overall Rating*
+                    <label><input type="radio" id="onestar" name="stars" value="5" required />⭐</label>
+                    <label><input type="radio" id="twostar" name="stars" value="4" required />⭐⭐</label>
+                    <label><input type="radio" id="threestar" name="stars" value="3" required />⭐⭐⭐</label>
+                    <label><input type="radio" id="fourstar" name="stars" value="2" required />⭐⭐⭐⭐</label>
+                    <label><input type="radio" id="fivestar" name="stars" value="1" required />⭐⭐⭐⭐⭐</label></label>
+            </fieldset>
+            <fieldset>
+                <label>Date of Installation
+                    <input type="date" id="date" name="installDate" required /></label>
+            </fieldset>
+            <fieldset>
+                <label>Which features did you find useful in the product? <br />(Check all
+                    that apply)</label>
+                <label><input type="checkbox" id="design" name="design" value="design" />Design</label>
+                <label><input type="checkbox" id="durability" name="durability" value="Durability" />Durability</label>
+                <label><input type="checkbox" id="easeOfUse" name="easeOfUse" value="Ease of use" />Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="performance" value="performance" />Performance</label>
+            </fieldset>
+            <fieldset>
+                <label>Written Review
+                    <textarea id="review" name="writtenReview"></textarea></label>
+            </fieldset>
+            <fieldset>
+                <label>Your Name (Optional)
+                    <input type="text" id="name" name="name" /></label>
+            </fieldset>
+            <input type="submit" value="Post Review" />
+        </form>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> 🕹️ Diego Arroyo Castaneda 🕹️ Nevada</p>
+        <p class="lastModified"></p>
+    </footer>
+</body>
+
+</html>

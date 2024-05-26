@@ -1,0 +1,86 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+header,
+footer {
+  background-color: #3ea4e9;
+  color: #333333;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.prodReview {
+  margin: 20px auto;
+  background-color: #9dcdfa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.prodReview fieldset {
+  margin: 2rem 0;
+  border: none;
+  border-radius: 6px;
+  padding: 0.2rem 2%;
+}
+
+.prodReview label {
+  display: block;
+  padding-top: 1rem;
+  color: #333333;
+  font-size: 0.9rem;
+}
+
+.prodReview input[type="text"],
+input[type="date"],
+textarea,
+select {
+  display: block;
+  border: solid 1px #222;
+  border-radius: 6px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 400px;
+  appearance: none;
+}
+
+.prodReview textarea {
+  max-width: 400px;
+  min-height: 2rem;
+  max-height: 10rem;
+  resize: vertical;
+}
+
+.prodReview input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.prodReview input[type="submit"] {
+  border: none;
+  background-color: lightcyan;
+  border-radius: 6px;
+  padding: 0.8rem;
+  width: 96%;
+  max-width: 400px;
+  margin: -1rem 2% 2rem 2%;
+  box-shadow: 1px 1px 4px #aaa;
+}
+
+.prodReview select {
+  border: solid 2px red;
+}
+
+.prodReview select:valid {
+  border: solid 2px green;
+}
+
+.prodReview input:required {
+  border-right: solid 8px red;
+}
+
+.prodReview input:required:valid {
+  border-right: solid 8px green;
+}
